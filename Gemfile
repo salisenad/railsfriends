@@ -38,17 +38,15 @@ group :development do
   gem 'sqlite3', '~> 1.4'
   # Display performance information such as SQL time and flame graphs for each request in your browser.
   # Can be configured to work on production as well see: https://github.com/MiniProfiler/rack-mini-profiler/blob/master/README.md
-  gem 'rack-mini-profiler', '~> 2.0'
-  gem 'sqlite3', '~> 1.4'
+  # gem 'rack-mini-profiler', '~> 2.0'
+
 end
 
 group :production do
   gem 'pg', '~> 1.2', '>= 1.2.3'
+  gem 'rails_12factor', '0.0.2'
 end
 
-group :production do
-  gem 'pg', '~> 1.2', '>= 1.2.3'
-end
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
